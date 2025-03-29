@@ -29,9 +29,9 @@ public abstract class Cuenta {
 
     protected BigDecimal saldo;
 
-    protected String numerocuenta;
+    protected String numeroCuenta;
 
-    private String tipo;
+    //private String tipo;
 
     @Column(nullable = false)
     private String titular;
@@ -72,13 +72,13 @@ public abstract class Cuenta {
         this.titular = titular;
     }
 
-    public String getTipo() {
+    /*public String getTipo() {
         return tipo;
     }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
+    }*/
 
     public List<Transaccion> getTransacciones() {
             if (transacciones == null || transacciones.isEmpty()) {

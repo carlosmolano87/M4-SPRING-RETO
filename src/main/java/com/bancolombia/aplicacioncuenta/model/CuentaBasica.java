@@ -6,7 +6,7 @@ import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("Basica")
+@DiscriminatorValue("BASICA")
 public class CuentaBasica extends Cuenta {
 
     @Override

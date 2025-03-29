@@ -29,7 +29,7 @@ public class CuentaService {
 
     public List<String> obtenerHistorialTransacciones(CuentaDTO cuentaDTO) {
         Cuenta cuenta = obtenerCuentaPorNumero(cuentaDTO.getNumeroCuenta());
-        List<Transaccion> transacciones = transaccionRepository.findByCuentaOrderByFechaRegistroDesc(cuenta);
+        List<Transaccion> transacciones = transaccionRepository.findByCuentaOrderByFechaDesc(cuenta);
 
         return transacciones.stream()
                 .limit(5)

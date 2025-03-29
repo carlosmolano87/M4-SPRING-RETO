@@ -63,7 +63,7 @@ public class TransaccionService {
                 .orElseThrow(() -> new IllegalArgumentException(
                         "Cuenta no encontrada con el número de cuenta proporcionado"));
 
-        return transaccionRepository.findByCuentaOrderByFechaRegistroDesc(cuenta)
+        return transaccionRepository.findByCuentaOrderByFechaDesc(cuenta)
                 .stream()
                 .limit(5)
                 .map(transaccion -> transaccion.toString())                                                            

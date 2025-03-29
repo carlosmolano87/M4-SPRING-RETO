@@ -10,5 +10,5 @@ import java.util.List;
 @Repository
 public interface TransaccionRepository extends JpaRepository<Transaccion, Long> {
 
-    List<Transaccion> findByCuentaOrderByFechaRegistroDesc(Cuenta cuenta);
+    List<Transaccion> findByCuentaOrderByFechaDesc(Cuenta cuenta);
 }
