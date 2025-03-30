@@ -5,6 +5,11 @@ import jakarta.validation.constraints.NotNull;
 
 public class CuentaDTO {
 
+    public CuentaDTO(String numeroCuenta, BigDecimal saldo) {
+        this.numeroCuenta = numeroCuenta;
+        this.saldo = saldo;
+    }
+
     @NotNull(message = "El número de cuenta no puede ser nulo")
     private String numeroCuenta;
 

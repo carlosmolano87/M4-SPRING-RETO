@@ -72,6 +72,14 @@ public abstract class Cuenta {
         this.titular = titular;
     }
 
+    public String getNumeroCuenta() {
+        return numeroCuenta;
+    }
+
+    public void setNumeroCuenta(String numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
+
     /*public String getTipo() {
         return tipo;
     }

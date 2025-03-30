@@ -22,9 +22,9 @@ public class CuentaService {
         this.transaccionRepository = transaccionRepository;
     }
 
-    public BigDecimal obtenerSaldo(CuentaDTO cuentaDTO) {
-        Cuenta cuenta = obtenerCuentaPorNumero(cuentaDTO.getNumeroCuenta());
-        return cuenta.getSaldo();
+    public Cuenta obtenerSaldo(String numeroCuenta) {
+        return obtenerCuentaPorNumero(numeroCuenta);
+
     }
 
     public List<String> obtenerHistorialTransacciones(CuentaDTO cuentaDTO) {
